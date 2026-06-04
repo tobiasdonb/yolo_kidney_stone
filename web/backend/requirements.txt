@@ -1,0 +1,26 @@
+# Kidney Stone Detection — Backend Inference API
+# Sumber: web/backend/BACKEND.md (Section 1)
+#
+# Catatan PyTorch di Windows:
+#   CPU only:    pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   CUDA 12.1:   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# Lakukan instalasi torch terlebih dahulu agar versi sesuai hardware,
+# baru `pip install -r requirements.txt` untuk dependency lain.
+
+# --- Web framework & server ---
+fastapi>=0.115,<0.120
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+# --- Inference & image handling ---
+ultralytics==8.3.*
+pillow>=10.0
+torch>=2.2
+
+# --- Hardening (opsional, aman dipasang di dev) ---
+slowapi>=0.1.9
+
+# --- Testing ---
+pytest>=8
+httpx>=0.27
+hypothesis>=6
