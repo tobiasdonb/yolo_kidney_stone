@@ -107,7 +107,7 @@ export default function App() {
     formData.append("imgsz", "1280");
 
     try {
-      const response = await fetch(`${API_BASE_URL}/detect`, {
+      const response = await fetch(`${API_BASE_URL}/api/detect`, {
         method: "POST",
         body: formData,
       });
