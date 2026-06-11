@@ -11,9 +11,8 @@ from ultralytics import YOLO
 ALLOWED_MIME = {"image/png", "image/jpeg", "image/bmp", "image/tiff"}
 ALLOWED_IMGSZ = {320, 640, 1024, 1280, 1536}
 
-# Path bobot model — relatif ke root workspace.
-# Jalankan uvicorn dari root workspace (folder yolo/) supaya path ini ketemu.
-WEIGHTS = str(Path("model_result/train-2/best.pt").resolve())
+# Path bobot model — resolved relative to the file location (workspace root)
+WEIGHTS = str((Path(__file__).resolve().parent.parent.parent / "model_result" / "train-2" / "best.pt").resolve())
 
 app = FastAPI(
     title="Kidney Stone Detection API",
