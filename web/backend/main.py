@@ -20,11 +20,15 @@ app = FastAPI(
     version="1.0",
 )
 
-# CORS: izinkan origin dev frontend (Vite default 5173).
+# CORS: izinkan origin dev frontend + production frontend di Render.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
-    allow_methods=["POST", "GET", "OPTIONS"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://yolo-kidney-stone-frontend.onrender.com",
+    ],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
