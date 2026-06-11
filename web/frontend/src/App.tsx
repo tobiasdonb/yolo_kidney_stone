@@ -635,7 +635,7 @@ export default function App() {
               ) : (
                 <div className="detections-empty-new">
                   {imageUrl ? (
-                    <span>🔍 No stones detected at current confidence limit.</span>
+                    <span>No stones detected at current confidence limit.</span>
                   ) : (
                     <span>Upload a CT image to analyze detections</span>
                   )}

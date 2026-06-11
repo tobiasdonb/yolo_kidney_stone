@@ -26,7 +26,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://yolo-kidney-stone-frontend.onrender.com",
+        "https://furiousjock638-yolo-kidney-stone-frontend.hf.space",
+        "https://yolo-kidney-stone-1.onrender.com",
     ],
     allow_methods=["*"],
     allow_headers=["*"],
