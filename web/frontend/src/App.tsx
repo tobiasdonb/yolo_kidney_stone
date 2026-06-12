@@ -107,7 +107,7 @@ export default function App() {
     formData.append("imgsz", "1280");
 
     try {
-      const response = await fetch(`${API_BASE_URL}/detect`, {
+      const response = await fetch(`${API_BASE_URL}/api/detect`, {
         method: "POST",
         body: formData,
       });
@@ -635,7 +635,7 @@ export default function App() {
               ) : (
                 <div className="detections-empty-new">
                   {imageUrl ? (
-                    <span>🔍 No stones detected at current confidence limit.</span>
+                    <span>No stones detected at current confidence limit.</span>
                   ) : (
                     <span>Upload a CT image to analyze detections</span>
                   )}

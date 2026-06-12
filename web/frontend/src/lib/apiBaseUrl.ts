@@ -5,4 +5,4 @@
  * the Vite dev proxy (configured in `vite.config.ts`) can forward requests to
  * the backend without triggering CORS.
  */
-export const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL ?? '/api'
+export const API_BASE_URL: string = import.meta.env.VITE_API_BASE_URL ?? 'https://furiousjock638-yolo-kidney-stone.hf.space'
