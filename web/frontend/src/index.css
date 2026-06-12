@@ -69,7 +69,7 @@ body {
 /* Layout */
 .app-container {
   display: grid;
-  grid-template-rows: 56px 1fr;
+  grid-template-rows: 56px 1fr auto;
   height: 100vh;
   width: 100vw;
 }
@@ -121,7 +121,7 @@ body {
   grid-template-columns: 1fr 360px;
   gap: var(--space-lg);
   padding: var(--space-lg);
-  height: calc(100vh - 56px);
+  height: 100%;
   overflow: hidden;
 }
 
@@ -142,7 +142,7 @@ body {
   }
 
   .app-container {
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     height: auto;
     min-height: 100vh;
   }
