@@ -667,6 +667,14 @@ export default function App() {
           </div>
         </aside>
       </main>
+
+      {/* FOOTER */}
+      <footer style={{ textAlign: 'center', padding: '1.5rem', color: '#a0a0a0', fontSize: '0.9rem', width: '100%' }}>
+        &copy; {new Date().getFullYear()} Tobias Don Bosco. All rights reserved. <br/>
+        <a href="https://github.com/tobiasdonb" target="_blank" rel="noopener noreferrer" style={{ color: '#008376', textDecoration: 'none', fontWeight: 'bold' }}>
+          GitHub: tobiasdonb
+        </a>
+      </footer>
     </div>
   );
 }
